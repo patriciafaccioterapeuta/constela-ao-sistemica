@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Constelação Familiar Sistêmica</title>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+:root{--bg:#12091f;--card:#241338;--roxo:#5a2d82;--roxo2:#8d5bb5;--ouro:#d4af37;--ouro2:#f0d98c;--txt:#f7f1fa;--muted:#cab9d8;--danger:#c0392b}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#2b1743,var(--bg));color:var(--txt);font-family:Georgia,serif}.top{position:sticky;top:0;z-index:20;background:#12091fdd;border-bottom:1px solid #d4af3733;padding:13px 18px;color:var(--ouro);font-weight:bold;letter-spacing:.07em}.hero{text-align:center;padding:54px 18px 25px}.hero h1{font-size:clamp(2rem,5vw,4rem);color:var(--ouro);margin:0}.hero p{max-width:800px;margin:17px auto;color:var(--muted);line-height:1.7}.container{width:min(1120px,calc(100% - 20px));margin:auto}.screen{display:none}.screen.active{display:block}.card{background:linear-gradient(#241338,#170b26);border:1px solid #d4af3738;border-radius:22px;padding:clamp(18px,4vw,32px);box-shadow:0 15px 45px #0006;margin-bottom:20px}.step{color:var(--ouro2);text-transform:uppercase;font-size:.8rem;letter-spacing:.08em}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.check{display:flex;align-items:center;gap:8px;padding:10px;border:1px solid #8d5bb566;border-radius:12px;color:var(--muted);background:#ffffff06}.check input{accent-color:var(--ouro)}label{display:block;color:var(--ouro2);margin:13px 0 6px}input,select,textarea{width:100%;padding:12px;border-radius:11px;border:1px solid var(--roxo2);background:#160b26;color:var(--txt);font:inherit}.color-select{padding-left:12px}.direction-guide{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}.direction-side{padding:14px;border:1px solid #8d5bb566;border-radius:13px;background:#ffffff06;line-height:1.6}.front-mark{color:#f0d98c;font-weight:bold}.back-mark{color:#8d5bb5;font-weight:bold}.therapy-note{padding:16px;border-left:4px solid var(--ouro);background:#ffffff06;border-radius:10px;margin:14px 0;line-height:1.72}.section-highlight{margin-top:24px;padding:18px;border:1px solid #d4af3766;border-radius:16px;background:linear-gradient(135deg,#2e1748,#1c0d2c)}.section-highlight h2{margin-top:0}.reorg-tools{margin:18px 0;padding:16px;border:1px solid #8d5bb566;border-radius:14px;background:#ffffff06}textarea{min-height:95px}.row{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}button{border:0;border-radius:999px;padding:11px 18px;background:linear-gradient(135deg,var(--ouro),#a9812a);color:#241338;font-weight:bold;cursor:pointer}button.alt{background:transparent;border:1px solid var(--ouro);color:var(--ouro2)}button.del{background:var(--danger);color:white;padding:7px 11px}.list{list-style:none;padding:0}.list li{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 12px;border:1px solid #8d5bb566;border-radius:11px;margin:7px 0}.muted{color:var(--muted);font-size:.84rem;line-height:1.55}.fieldwrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:22px}.holder{width:100%;max-width:760px;aspect-ratio:1;margin:auto}.campo{width:100%;height:100%;touch-action:none;user-select:none}.pool{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.poolitem{text-align:center;padding:8px;border:1px solid #8d5bb555;border-radius:11px;color:var(--ouro2);font-size:.72rem}.poolitem svg{width:52px;height:52px}.used{opacity:.25}.box,.analysis{padding:13px;border:1px solid #8d5bb555;border-radius:13px;background:#ffffff06;margin:9px 0}.diag h3{color:var(--ouro);border-bottom:1px solid #8d5bb55;padding-bottom:7px;margin-top:27px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{padding:5px 9px;border-radius:999px;border:1px solid #8d5bb555;color:var(--muted);font-size:.77rem}.modalbg{position:fixed;inset:0;background:#000b;z-index:100;display:none;align-items:center;justify-content:center;padding:18px}.modalbg.on{display:flex}.modal{width:min(520px,100%);background:#241338;border:1px solid #d4af3755;border-radius:20px;padding:22px}.warn{background:#3a1414;border:1px solid var(--danger);color:#ffd7d2;padding:14px;border-radius:12px}footer{text-align:center;color:var(--muted);padding:25px;font-size:.78rem}@media(max-width:820px){.grid2,.grid3,.fieldwrap{grid-template-columns:1fr}.checks{grid-template-columns:1fr 1fr}.pool{grid-template-columns:repeat(4,1fr)}}@media(max-width:480px){.checks{grid-template-columns:1fr}.pool{grid-template-columns:repeat(3,1fr)}.row{display:grid}.row button{width:100%}}
+</style>
+</head>
+<body>
+<div class="top">CONSTELAÇÃO FAMILIAR SISTÊMICA</div>
+<header class="hero"><h1>Campo Sistêmico Interativo</h1><p>Colocação realmente cega, configuração livre dos bonecos, revelação progressiva, diagnóstico simbólico aprofundado e reorganização manual com avaliação.</p></header>
+<main class="container">
+<section class="screen active" id="inicio"><div class="card"><div class="step">Antes de começar</div><h2>Experiência sistêmica personalizada</h2><p>Informe o nome da pessoa e a data da sessão. Esses dados aparecerão no relatório final.</p>
+<div class="grid2">
+  <div><label for="clientName">Nome da pessoa</label><input id="clientName" type="text" placeholder="Digite o nome da pessoa"></div>
+  <div><label for="sessionDate">Data da sessão</label><input id="sessionDate" type="date"></div>
+</div>
+<p class="muted">Durante a colocação, nenhuma figura mostrará nome, papel ou se representa pessoa, tema emocional ou elemento espiritual.</p>
+<div class="row"><button onclick="startExperience()">Iniciar experiência</button></div></div></section>
+<section class="screen" id="s1"><div class="card"><div class="step">Etapa 1 de 6 — Objetivo</div><h2>Qual área deseja observar?</h2><div class="checks" id="areas">
+<label class="check"><input type="checkbox" value="Dinheiro e prosperidade">Dinheiro e prosperidade</label><label class="check"><input type="checkbox" value="Relacionamento amoroso">Relacionamento amoroso</label><label class="check"><input type="checkbox" value="Família de origem">Família de origem</label><label class="check"><input type="checkbox" value="Trabalho e carreira">Trabalho e carreira</label><label class="check"><input type="checkbox" value="Autoestima e identidade">Autoestima e identidade</label><label class="check"><input type="checkbox" value="Luto e separação">Luto e separação</label><label class="check"><input type="checkbox" value="Maternidade ou paternidade">Maternidade ou paternidade</label><label class="check"><input type="checkbox" value="Saúde e bem-estar">Saúde e bem-estar</label><label class="check"><input type="checkbox" value="Espiritual">Espiritual</label><label class="check"><input type="checkbox" value="Outro">Outro</label></div><label>Objetivo da sessão</label><textarea id="objetivo" placeholder="Ex.: Quero compreender o que dificulta minha prosperidade e por que sinto culpa ao crescer."></textarea><div class="row"><button class="alt" onclick="show('inicio')">Voltar</button><button onclick="next1()">Continuar</button></div></div></section>
+<section class="screen" id="s2"><div class="card"><div class="step">Etapa 2 de 6 — Elementos</div><h2>Pessoas</h2><div class="grid2"><div><label>Papel/relação</label><input id="papel" placeholder="Ex.: Pai, marido, chefe"></div><div><label>Nome</label><input id="nome" placeholder="Ex.: José"></div></div><div class="row"><button onclick="addPessoa()">+ Adicionar pessoa</button></div><h2>Temas abstratos</h2><p class="muted">Os cinco temas centrais já vêm selecionados. No campo, eles serão bonecos iguais aos demais.</p><div class="checks" id="temas"><label class="check"><input type="checkbox" value="Culpa" checked>Culpa</label><label class="check"><input type="checkbox" value="Raiva" checked>Raiva</label><label class="check"><input type="checkbox" value="Rejeição" checked>Rejeição</label><label class="check"><input type="checkbox" value="Não merecimento" checked>Não merecimento</label><label class="check"><input type="checkbox" value="Medo" checked>Medo</label><label class="check"><input type="checkbox" value="Dinheiro">Dinheiro</label><label class="check"><input type="checkbox" value="Trabalho">Trabalho</label><label class="check"><input type="checkbox" value="Sucesso">Sucesso</label><label class="check"><input type="checkbox" value="Relacionamento">Relacionamento</label></div><div class="grid2"><div><label>Outro tema</label><input id="outroTema" placeholder="Ex.: abandono, empresa, corpo"></div><div style="align-self:end"><button onclick="addTema()">+ Adicionar tema</button></div></div>
+
+<div class="section-highlight">
+<h2>✨ Elementos espirituais</h2>
+<p class="muted">Esta seção permanece visível para que você possa incluir os elementos espirituais que desejar, mesmo que não tenha marcado a área espiritual anteriormente.</p>
+<div class="checks" id="spiritualThemes">
+<label class="check"><input type="checkbox" value="Karmas">Karmas</label>
+<label class="check"><input type="checkbox" value="Contratos espirituais">Contratos espirituais</label>
+<label class="check"><input type="checkbox" value="Pactos">Pactos</label>
+<label class="check"><input type="checkbox" value="Magia">Magia</label>
+<label class="check"><input type="checkbox" value="Feitiçaria">Feitiçaria</label>
+<label class="check"><input type="checkbox" value="Obsessores">Obsessores</label>
+<label class="check"><input type="checkbox" value="Elementais negativos">Elementais negativos</label>
+<label class="check"><input type="checkbox" value="Trabalho espiritual">Trabalho espiritual</label>
+<label class="check"><input type="checkbox" value="Mediunidade">Mediunidade</label>
+<label class="check"><input type="checkbox" value="Mentor espiritual">Mentor espiritual</label>
+<label class="check"><input type="checkbox" value="Guias espirituais">Guias espirituais</label>
+<label class="check"><input type="checkbox" value="Prosperidade espiritual">Prosperidade</label>
+<label class="check"><input type="checkbox" value="Relacionamento espiritual">Relacionamento</label>
+<label class="check"><input type="checkbox" value="Ancestralidade espiritual">Ancestralidade</label>
+<label class="check"><input type="checkbox" value="Saúde espiritual">Saúde</label>
+<label class="check"><input type="checkbox" value="Proteção espiritual">Proteção espiritual</label>
+</div>
+<div class="grid2">
+  <div><label for="outroEspiritual">Outro elemento espiritual</label><input id="outroEspiritual" placeholder="Ex.: missão, propósito, limpeza, proteção"></div>
+  <div style="align-self:end"><button onclick="addSpiritual()">+ Adicionar elemento espiritual</button></div>
+</div>
+</div>
+
+<ul id="lista" class="list"></ul><div class="row"><button class="alt" onclick="show('s1')">Voltar</button><button onclick="prepareBlind()">Configurar bonecos às cegas</button></div></div></section>
+<section class="screen" id="sconfig"><div class="card"><div class="info" style="margin-top:10px">
+<strong>O que significa “Direção”?</strong><br>
+Direção é o lado para o qual a <strong>frente, o rosto e o olhar simbólico do boneco</strong> estão voltados. 
+Ela não indica para onde o corpo está caminhando. A ponta dourada mostra a frente/rosto; a linha tracejada mostra as costas.
+</div><div class="step">Etapa 3 de 6 — Configuração cega</div><h2>Escolha tamanho, cor e direção</h2><p>As figuras estão embaralhadas. Você não saberá quem é quem.</p><div id="configs"></div><h3>Configuração do “Eu”</h3><div class="grid3"><div><label>Tamanho</label><select id="euSize"><option>pequeno</option><option selected>medio</option><option>grande</option></select></div><div><label>Cor</label><select id="euColor" class="color-select"><option value="#d4af37">Dourado</option>
+<option value="#c0392b">Vermelho</option>
+<option value="#e67e22">Laranja</option>
+<option value="#27ae60">Verde</option>
+<option value="#2980b9">Azul</option>
+<option value="#8e44ad">Roxo</option>
+<option value="#f4f4f4">Branco</option>
+<option value="#e88bb5">Rosa</option></select></div><div><label>Direção do rosto/olhar</label><select id="euDir"><option value="270">Olhar voltado para cima</option><option value="0">Olhar voltado para a direita</option><option value="90">Olhar voltado para baixo</option><option value="180">Olhar voltado para a esquerda</option><option value="315">Olhar na diagonal superior direita</option><option value="225">Olhar na diagonal superior esquerda</option><option value="45">Olhar na diagonal inferior direita</option><option value="135">Olhar na diagonal inferior esquerda</option></select></div></div><div class="row"><button class="alt" onclick="show('s2')">Voltar</button><button onclick="startField()">Ir para o campo</button></div></div></section>
+<section class="screen" id="s3"><div class="card"><div class="step">Etapa 4 de 6 — Campo cego</div><p>Arraste os bonecos e o “Eu”. Clique para editar tamanho, cor e direção.</p><div class="direction-guide"><div class="direction-side"><span class="front-mark">▲ FRENTE/ROSTO:</span> a ponta dourada acima da cabeça indica a frente, o rosto e a direção simbólica do olhar do boneco. Ao girar o boneco, a ponta acompanha a nova direção.</div><div class="direction-side"><span class="back-mark">┄ COSTAS:</span> a linha tracejada fica atrás do boneco, sempre no lado oposto à ponta dourada.</div></div><div class="fieldwrap"><div class="holder"><svg id="campo" class="campo" viewBox="0 0 600 600"></svg></div><div><div id="pool" class="pool"></div><div class="box muted"><strong>Controles</strong><br>Arraste para inserir ou reposicionar.<br>Clique para editar.<br><span class='front-mark'>Ponta dourada = frente, rosto e direção do olhar.</span><br><span class='back-mark'>Linha tracejada = costas.</span><br>Nenhum nome é revelado.</div></div></div><label>O que você percebe antes da revelação?</label><textarea id="pre"></textarea><div class="row"><button class="alt" onclick="clearField()">Limpar posições</button><button id="revealBtn" disabled onclick="beginReveal()">Revelar</button></div></div></section>
+<section class="screen" id="s4"><div class="card"><div class="step">Etapa 5 de 6 — Revelação e diagnóstico</div><svg id="revealed" class="campo" viewBox="0 0 600 600" style="max-width:760px;display:block;margin:auto"></svg><div class="row" style="justify-content:center"><button id="nextReveal" onclick="revealNext()">Revelar próxima figura</button></div><div id="warning" class="warn" style="display:none"></div><div id="diag" class="diag" style="display:none"></div><div class="row" style="justify-content:center"><button id="goSolution" style="display:none" onclick="openSolution()">Reorganizar o campo</button></div></div></section>
+<section class="screen" id="s5"><div class="card"><div class="step">Etapa 6 de 6 — Reorganização</div><p>Arraste livremente. A movimentação foi simplificada para não travar.</p><div class="row"><button class="alt" onclick="restoreOriginal()">Restaurar original</button><button class="alt" onclick="suggestSolution()">Sugestão do sistema</button><button class="alt" onclick="evaluateSolution()">Avaliar reorganização</button></div>
+
+<div class="reorg-tools">
+<h3>Acrescentar ou excluir bonecos</h3>
+<div class="grid2">
+  <div><label for="newReorgName">Nome do novo elemento</label><input id="newReorgName" placeholder="Ex.: Futuro, Limite, Nova profissão, Proteção"></div>
+  <div><label for="newReorgType">Categoria</label><select id="newReorgType"><option value="theme">Tema</option><option value="person">Pessoa</option><option value="spiritual">Espiritual</option></select></div>
+</div>
+<div class="row"><button onclick="addReorgFigure()">+ Acrescentar boneco</button></div>
+<div class="grid2">
+  <div><label for="removeReorgSelect">Boneco que deseja excluir</label><select id="removeReorgSelect"><option value="">Selecione...</option></select></div>
+  <div style="align-self:end"><button class="del" onclick="removeReorgFigure()">Excluir boneco selecionado</button></div>
+</div>
+<p class="muted">O “Eu” não pode ser excluído. Os elementos acrescentados aparecem inicialmente próximos ao centro e podem ser movimentados livremente.</p>
+</div>
+
+<div class="holder"><svg id="solution" class="campo" viewBox="0 0 600 600"></svg></div><div id="why" class="diag"></div><div id="eval" class="diag"></div><div class="row"><p class="muted" style="width:100%;text-align:center">O PDF incluirá uma página com a imagem do campo original e outra com o campo reorganizado.</p><button onclick="makePDF(event)">Gerar PDF completo</button><button class="alt" onclick="resetAll()">Nova experiência</button></div></div></section>
+</main><footer>Esta experiência não substitui psicoterapia, diagnóstico médico, avaliação psicológica ou atendimento emergencial.</footer>
+<div class="modalbg" id="modal"><div class="modal"><h2>Editar figura</h2><p id="modalLabel" class="muted">Identidade oculta.</p><div class="grid3"><div><label>Tamanho</label><select id="mSize"><option>pequeno</option><option>medio</option><option>grande</option></select></div><div><label>Cor</label><select id="mColor" class="color-select"><option value="#d4af37">Dourado</option>
+<option value="#c0392b">Vermelho</option>
+<option value="#e67e22">Laranja</option>
+<option value="#27ae60">Verde</option>
+<option value="#2980b9">Azul</option>
+<option value="#8e44ad">Roxo</option>
+<option value="#f4f4f4">Branco</option>
+<option value="#e88bb5">Rosa</option></select></div><div><label>Direção do rosto/olhar</label><select id="mDir"><option value="270">Olhar voltado para cima</option><option value="0">Olhar voltado para a direita</option><option value="90">Olhar voltado para baixo</option><option value="180">Olhar voltado para a esquerda</option><option value="315">Olhar na diagonal superior direita</option><option value="225">Olhar na diagonal superior esquerda</option><option value="45">Olhar na diagonal inferior direita</option><option value="135">Olhar na diagonal inferior esquerda</option></select></div></div><div class="row"><button onclick="saveEdit()">Salvar</button><button class="alt" onclick="closeModal()">Cancelar</button></div></div></div>
+<script>
+const C=300,R=276;let clientNameValue='',sessionDateValue='';let areas=[],els=[],figs=[],order=[],eu={id:'eu',x:null,y:null,x2:null,y2:null,size:'medio',color:'#d4af37',dir:270,dir2:270,placed:false},mode='blind',revealIndex=0,editing=null,drag=null;
+const risks=['suic','me matar','quero morrer','abuso sexual','espanca','violência','me machucar','ameaça'];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+
+document.addEventListener('DOMContentLoaded',()=>{
+  const dateInput=document.getElementById('sessionDate');
+  if(dateInput&&!dateInput.value)dateInput.value=new Date().toISOString().slice(0,10);
+});
+function startExperience(){
+  clientNameValue=(document.getElementById('clientName').value||'').trim();
+  sessionDateValue=document.getElementById('sessionDate').value||new Date().toISOString().slice(0,10);
+  if(!clientNameValue)return alert('Informe o nome da pessoa antes de iniciar.');
+  show('s1');
+}
+function formatDateBR(value){
+  if(!value)return '';
+  const parts=value.split('-');
+  return parts.length===3?`${parts[2]}/${parts[1]}/${parts[0]}`:value;
+}
+function show(id){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');scrollTo({top:0,behavior:'smooth'})}
+function next1(){areas=[...document.querySelectorAll('#areas input:checked')].map(x=>x.value);if(!areas.length)return alert('Selecione uma área.');show('s2')}
+function addPessoa(){let p=papel.value.trim(),n=nome.value.trim();if(!p||!n)return alert('Preencha papel e nome.');els.push({id:'e'+Date.now()+Math.random(),type:'person',role:p,name:n});papel.value='';nome.value='';renderList()}
+function addTema(){let t=outroTema.value.trim();if(!t)return alert('Digite o tema.');els.push({id:'e'+Date.now()+Math.random(),type:'theme',role:t,name:null});outroTema.value='';renderList()}
+function addSpiritual(){
+  let t=outroEspiritual.value.trim();
+  if(!t)return alert('Digite o elemento espiritual.');
+  els.push({id:'sp'+Date.now()+Math.random(),type:'spiritual',role:t,name:null});
+  outroEspiritual.value='';
+  renderList();
+}
+function renderList(){lista.innerHTML='';els.forEach(e=>{let li=document.createElement('li');li.innerHTML=`<div><strong>${esc(e.type==='person'?e.role+' — '+e.name:(e.type==='spiritual'?'Espiritual: ':'Tema: ')+e.role)}</strong><div class="muted">${e.type==='person'?'Pessoa':e.type==='spiritual'?'Elemento espiritual':'Tema abstrato'}</div></div>`;let b=document.createElement('button');b.className='del';b.textContent='remover';b.onclick=()=>{els=els.filter(x=>x.id!==e.id);renderList()};li.appendChild(b);lista.appendChild(li)})}
+function syncThemes(){
+  els=els.filter(e=>!e.auto);
+  [...document.querySelectorAll('#temas input:checked')].forEach(x=>els.push({id:'t'+x.value+Math.random(),type:'theme',role:x.value,name:null,auto:true}));
+  [...document.querySelectorAll('#spiritualThemes input:checked')].forEach(x=>els.push({id:'sp'+x.value+Math.random(),type:'spiritual',role:x.value,name:null,auto:true}));
+}
+function prepareBlind(){syncThemes();if(els.length<2){renderList();return alert('Inclua ao menos dois elementos.')}figs=els.map((e,i)=>({id:'f'+i,elementId:e.id,x:null,y:null,x2:null,y2:null,size:'medio',color:'#8d5bb5',dir:270,dir2:270,placed:false,revealed:false}));order=figs.slice().sort(()=>Math.random()-.5);order.forEach((f,i)=>f.neutral='Figura '+(i+1));renderConfigs();show('sconfig')}
+function renderConfigs(){configs.innerHTML='';order.forEach(f=>{let d=document.createElement('div');d.className='box';d.innerHTML=`<h3>${f.neutral}</h3><div class="grid3"><div><label>Tamanho</label><select data-id="${f.id}" data-k="size"><option>pequeno</option><option selected>medio</option><option>grande</option></select></div><div><label>Cor</label><select data-id="${f.id}" data-k="color" class="color-select"><option value="#d4af37">Dourado</option>
+<option value="#c0392b">Vermelho</option>
+<option value="#e67e22">Laranja</option>
+<option value="#27ae60">Verde</option>
+<option value="#2980b9">Azul</option>
+<option value="#8e44ad">Roxo</option>
+<option value="#f4f4f4">Branco</option>
+<option value="#e88bb5">Rosa</option></select></div><div><label>Direção do rosto/olhar</label><select data-id="${f.id}" data-k="dir"><option value="270">Olhar voltado para cima</option><option value="0">Olhar voltado para a direita</option><option value="90">Olhar voltado para baixo</option><option value="180">Olhar voltado para a esquerda</option><option value="315">Olhar na diagonal superior direita</option><option value="225">Olhar na diagonal superior esquerda</option><option value="45">Olhar na diagonal inferior direita</option><option value="135">Olhar na diagonal inferior esquerda</option></select></div></div>`;configs.appendChild(d)});configs.querySelectorAll('[data-id]').forEach(x=>{let f=order.find(y=>y.id===x.dataset.id);if(x.dataset.k==='color')x.value=f.color;x.onchange=()=>{f[x.dataset.k]=x.dataset.k==='dir'?+x.value:x.value}})}
+function startField(){eu.size=euSize.value;eu.color=euColor.value;eu.dir=+euDir.value;mode='blind';draw('campo',false,false);renderPool();show('s3')}
+function scale(s){return s==='grande'?1.45:s==='pequeno'?.78:1.05}
+function doll(color,size){return `<svg viewBox="0 0 64 64"><g transform="translate(32 31) scale(${scale(size)})"><circle cx="0" cy="-12" r="7" fill="${color}"/><path d="M-11 18 Q0 -5 11 18 Z" fill="${color}"/><polygon points="0,-23 -5,-16 5,-16" fill="#f0d98c"/></g></svg>`}
+function renderPool(){pool.innerHTML='';let all=[eu,...order];all.forEach(i=>{let d=document.createElement('div');d.className='poolitem'+(i.placed?' used':'');d.innerHTML=doll(i.color,i.size)+`<div>${i.id==='eu'?'Eu':i.neutral}</div>`;d.querySelector('svg').onpointerdown=e=>startDrag(e,i,'campo',false,true);pool.appendChild(d)})}
+function base(id){return `<circle cx="300" cy="300" r="276" fill="none" stroke="#5a2d82" stroke-width="3" stroke-dasharray="6 6"/><circle cx="300" cy="300" r="5" fill="#d4af37"/><g id="g-${id}"></g>`}
+function label(i,reveal){if(i.id==='eu')return'Eu';if(!reveal)return i.neutral;let e=els.find(x=>x.id===i.elementId);return e.type==='person'?e.role+' — '+e.name:e.role}
+function draw(id,reveal,solutionMode){let svg=document.getElementById(id);svg.innerHTML=base(id);[eu,...order].forEach(i=>{let x=solutionMode?i.x2:i.x,y=solutionMode?i.y2:i.y;if(i.placed&&x!=null)drawItem(svg,i,id,reveal,solutionMode)})}
+function drawItem(svg,i,id,reveal,solutionMode){let ns='http://www.w3.org/2000/svg',g=document.createElementNS(ns,'g'),x=solutionMode?i.x2:i.x,y=solutionMode?i.y2:i.y,dir=solutionMode?(i.dir2??i.dir):i.dir,s=scale(i.size);g.setAttribute('transform',`translate(${x},${y})`);g.style.cursor='grab';let rad=dir*Math.PI/180,fx=26*Math.cos(rad),fy=26*Math.sin(rad),bx=-18*Math.cos(rad),by=-18*Math.sin(rad);g.innerHTML=`<g transform="rotate(${dir+90}) scale(${s})"><circle cx="0" cy="-12" r="7" fill="${i.color}"/><path d="M-11 18 Q0 -5 11 18 Z" fill="${i.color}"/><polygon points="0,-24 -6,-16 6,-16" fill="#f0d98c"/><line x1="-7" y1="18" x2="7" y2="18" stroke="#f4ecf9" stroke-width="2"/></g><line x1="0" y1="0" x2="${fx}" y2="${fy}" stroke="#f4ecf9" stroke-width="2"/><circle cx="${fx}" cy="${fy}" r="3" fill="#f0d98c"/><line x1="0" y1="0" x2="${bx}" y2="${by}" stroke="#8d5bb5" stroke-width="2" stroke-dasharray="3 3"/><text y="${i.size==='grande'?43:35}" text-anchor="middle" font-size="11" fill="${reveal?'#d4af37':'#f4ecf9'}" font-weight="${reveal?'bold':'normal'}">${esc(label(i,reveal))}</text>`;let sx=0,sy=0,moved=false;g.onpointerdown=e=>{sx=e.clientX;sy=e.clientY;moved=false;startDrag(e,i,id,solutionMode,false)};g.onpointermove=e=>{if(Math.abs(e.clientX-sx)>5||Math.abs(e.clientY-sy)>5)moved=true};g.onpointerup=()=>{if(!moved)setTimeout(()=>openEditor(i,solutionMode),0)};svg.querySelector('#g-'+id).appendChild(g)}
+function startDrag(e,item,svgId,solutionMode,fromPool){if(fromPool&&item.placed)return;e.preventDefault();drag={item,svgId,solutionMode};window.addEventListener('pointermove',moveDrag,{passive:false});window.addEventListener('pointerup',endDrag,{once:true})}
+function point(e,svg){let r=svg.getBoundingClientRect();return{x:(e.clientX-r.left)*600/r.width,y:(e.clientY-r.top)*600/r.height,inside:e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom}}
+function clamp(p){let dx=p.x-C,dy=p.y-C,d=Math.hypot(dx,dy);if(d>R-8){p.x=C+dx/d*(R-8);p.y=C+dy/d*(R-8)}return p}
+function moveDrag(e){if(!drag)return;e.preventDefault();let svg=document.getElementById(drag.svgId),p=point(e,svg);if(!p.inside)return;clamp(p);if(drag.solutionMode){drag.item.x2=p.x;drag.item.y2=p.y}else{drag.item.x=p.x;drag.item.y=p.y;drag.item.placed=true}draw(drag.svgId,drag.svgId!=='campo',drag.solutionMode);if(drag.svgId==='campo')renderPool();revealBtn.disabled=!eu.placed||!order.every(f=>f.placed)}
+function endDrag(){window.removeEventListener('pointermove',moveDrag);drag=null}
+function clearField(){[eu,...order].forEach(i=>{i.x=i.y=null;i.placed=false});draw('campo',false,false);renderPool();revealBtn.disabled=true}
+function openEditor(i,solutionMode){editing={i,solutionMode};modalLabel.textContent=mode==='blind'&&i.id!=='eu'?'Identidade oculta nesta etapa.':label(i,true);mSize.value=i.size;mColor.value=i.color;mDir.value=String(solutionMode?(i.dir2??i.dir):i.dir);modal.classList.add('on')}
+function closeModal(){modal.classList.remove('on');editing=null}
+function saveEdit(){if(!editing)return;let{i,solutionMode}=editing;i.size=mSize.value;i.color=mColor.value;if(solutionMode)i.dir2=+mDir.value;else i.dir=+mDir.value;closeModal();if(solutionMode)draw('solution',true,true);else{draw('campo',false,false);renderPool()}}
+function beginReveal(){mode='revealed';revealIndex=0;order.forEach(f=>f.revealed=false);show('s4');redrawReveal();nextReveal.style.display='inline-block';nextReveal.textContent='Revelar próxima figura';diag.style.display='none';goSolution.style.display='none'}
+function redrawReveal(){revealed.innerHTML=base('revealed');drawItem(revealed,eu,'revealed',true,false);order.forEach(f=>drawItem(revealed,f,'revealed',f.revealed,false))}
+function revealNext(){if(revealIndex>=order.length){makeDiagnosis();return}order[revealIndex].revealed=true;revealIndex++;redrawReveal();if(revealIndex>=order.length)nextReveal.textContent='Gerar diagnóstico aprofundado'}
+function dist(a,b){return Math.hypot(a.x-b.x,a.y-b.y)}function angle(a,b){return(Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI+360)%360}function diff(a,b){return Math.abs(((a-b+540)%360)-180)}
+function gaze(i){let d=diff(i.dir,angle(i,eu));return d<35?'olha diretamente para o Eu':d<75?'olha parcialmente para o Eu':d>145?'está de costas para o Eu':'olha lateralmente em relação ao Eu'}
+function target(i){let best=null;[eu,...order].filter(x=>x!==i).forEach(x=>{let da=diff(i.dir,angle(i,x)),dd=dist(i,x);if(da<28){let sc=da+dd/20;if(!best||sc<best.sc)best={x,sc,dd}}});return best}
+function zone(i){let d=Math.hypot(i.x-C,i.y-C);return d<85?'núcleo central':d<175?'faixa intermediária':d<245?'faixa externa':'borda do campo'}
+function sizeMeaning(s){return s==='grande'?'forte influência, intensidade, poder, ameaça, proteção ou ampliação emocional':s==='pequeno'?'fragilidade, pouca voz, distanciamento, infantilização ou baixa influência percebida':'presença intermediária ou equilibrada'}
+function pairs(items,lim=92){let r=[];for(let a=0;a<items.length;a++)for(let b=a+1;b<items.length;b++){let d=dist(items[a],items[b]);if(d<lim)r.push({a:items[a],b:items[b],d})}return r}
+
+const COLOR_INFO={
+'#e88bb5':{nome:'rosa',sentido:'afeto, sensibilidade, acolhimento, delicadeza, vínculo amoroso, necessidade de cuidado ou desejo de harmonia'},
+'#d4af37':{nome:'dourado',sentido:'valor, reconhecimento, potência, merecimento e necessidade de ser visto'},
+'#c0392b':{nome:'vermelho',sentido:'força, urgência, paixão, raiva, conflito, sobrevivência ou necessidade de ação'},
+'#e67e22':{nome:'laranja',sentido:'movimento, criatividade, desejo, espontaneidade e busca de prazer'},
+'#27ae60':{nome:'verde',sentido:'vínculo, esperança, crescimento, cuidado e necessidade de equilíbrio'},
+'#2980b9':{nome:'azul',sentido:'comunicação, serenidade, racionalidade, distância emocional ou busca de segurança'},
+'#8e44ad':{nome:'roxo',sentido:'interioridade, autoridade, espiritualidade pessoal, mistério e transformação'},
+'#f4f4f4':{nome:'branco',sentido:'paz, idealização, neutralização, ausência de definição ou desejo de recomeço'}
+};
+function colorInfo(i){return COLOR_INFO[i.color]||{nome:'cor escolhida',sentido:'um significado pessoal que precisa ser perguntado'}}
+function openingText(n,f){return `Antes de tentar mudar este campo, permita-se reconhecê-lo. Cada posição mostra como esta questão se organiza dentro de você hoje. ${label(n,true)} ficou muito próximo do seu Eu, como se pedisse atenção imediata ou ocupasse um espaço emocional intenso. ${label(f,true)} permaneceu mais distante, podendo representar proteção, medo, inacessibilidade ou algo que ainda não encontrou um lugar seguro para ser olhado.`}
+function selfNarrative(){let ci=colorInfo(eu),central=Math.hypot(eu.x-C,eu.y-C)<95;return `${central?'Seu Eu aparece próximo do centro, sugerindo uma tentativa de recuperar o próprio lugar e olhar a questão a partir de si.':'Seu Eu aparece afastado do centro. Talvez você esteja organizando sua vida mais em função do que acontece ao redor do que a partir das próprias necessidades.'} A cor ${ci.nome} escolhida para o Eu traz simbolicamente ${ci.sentido}.`}
+function figureNarrative(i){let ci=colorInfo(i),t=target(i),tx=`${label(i,true)} foi colocado em tamanho ${i.size}, na cor ${ci.nome}, associada a ${ci.sentido}. Está a ${i.id==='eu'?0:Math.round(dist(i,eu))} unidades do Eu e ${gaze(i)}.`;if(t)tx+=` Pela frente do boneco, parece dirigir o olhar para ${label(t.x,true)}. Isso pode expressar expectativa, cobrança, busca de reconhecimento, proteção, conflito ou dependência.`;else tx+=' Seu olhar não encontra um alvo claro dentro do campo, podendo indicar busca por algo ausente, tentativa de sair da situação ou dificuldade de permanecer em contato.';return tx}
+function movements(n,f,themes){let a=[`Reconhecer ${label(n,true)} sem permitir que ocupe todo o espaço do Eu.`,`Aproximar-se de ${label(f,true)} apenas o suficiente para olhar, nomear e estabelecer um limite possível, sem forçar reconciliação.`];if(themes.length){let d=themes.slice().sort((x,y)=>dist(x,eu)-dist(y,eu))[0];a.push(`Diferenciar-se de ${label(d,true)} dizendo: “Eu sinto isso, mas eu não sou apenas isso.”`)}return a}
+function letters(){let near=order.slice().sort((a,b)=>dist(a,eu)-dist(b,eu))[0],people=order.filter(f=>els.find(e=>e.id===f.elementId).type==='person'),parents=people.filter(f=>/pai|mãe|mae/i.test(els.find(e=>e.id===f.elementId).role)),out=[];out.push(`CARTA PARA O MEU EU\n\nEu reconheço que posso ter organizado minha vida a partir do medo, da culpa, da rejeição ou da necessidade de pertencer. Hoje escolho olhar para mim com mais honestidade e respeito. Eu não preciso negar minha história para seguir adiante. Quando ${label(near,true)} se aproximar demais dentro de mim, vou respirar e perguntar: “O que realmente me pertence neste momento?” Eu me autorizo a ocupar meu lugar, estabelecer limites e caminhar com mais presença.`);if(parents.length)out.push(`CARTA SIMBÓLICA AOS MEUS PAIS\n\nPai e mãe, reconheço que a vida chegou até mim através de vocês. Também reconheço limites, ausências e dores. Não preciso dizer que tudo foi certo para reconhecer minha origem. Hoje procuro diferenciar o que é de vocês do que é meu. Agradeço pela vida e assumo a responsabilidade de cuidar do que faço com ela. Não preciso carregar culpas, destinos ou conflitos para provar amor e pertencimento.`);let partner=people.find(f=>/marido|esposa|namorad|parceir|cônjuge|conjuge/i.test(els.find(e=>e.id===f.elementId).role));if(partner)out.push(`CARTA AO VÍNCULO AMOROSO\n\nEu reconheço você como alguém diferente de mim, com sua história, seus limites e suas escolhas. Não quero usar o vínculo para preencher tudo o que me faltou, nem me abandonar para manter a relação. Quero estar perto sem me perder e criar distância sem punir. O que é meu, eu assumo; o que é seu, eu respeito.`);return out}
+function deepActivities(){let a=activities();a.unshift('Pausa de regulação: coloque os pés no chão, pressione-os suavemente e nomeie cinco coisas que vê. Observe o campo novamente sem buscar resposta imediata.');a.push('Movimento de diferenciação: uma mão no peito e outra à frente do corpo. Diga lentamente: “Eu posso amar e pertencer sem carregar tudo. Posso reconhecer e também escolher.”');a.push('Visualização simbólica: imagine uma linha de luz apenas como recurso de imaginação entre você e cada figura. Pergunte qual vínculo precisa de aproximação, qual precisa de limite e qual precisa apenas ser reconhecido. Esta prática não implica efeito quântico comprovado.');return a}
+
+function makeDiagnosis(){nextReveal.style.display='none';let tx=(pre.value+' '+objetivo.value).toLowerCase();if(risks.some(r=>tx.includes(r))){warning.style.display='block';warning.innerHTML='<strong>Atenção:</strong> surgiram palavras relacionadas a risco, violência ou sofrimento intenso. Interrompa a autoanálise e procure apoio humano e profissional adequado.';return}let all=[eu,...order],sorted=order.slice().sort((a,b)=>dist(a,eu)-dist(b,eu)),near=sorted[0],far=sorted.at(-1),ps=pairs(all),themes=order.filter(f=>els.find(e=>e.id===f.elementId).type==='theme');let h=`<h3>Uma leitura para acolher o que o campo revela</h3><div class="chips">${areas.map(a=>`<span class="chip">${esc(a)}</span>`).join('')}</div><div class="therapy-note">${esc(openingText(near,far))}</div><p><strong>${esc(clientNameValue)}, sua pergunta para esta sessão:</strong> ${esc(objetivo.value||'não informada')}</p><p><strong>Data da sessão:</strong> ${formatDateBR(sessionDateValue)}</p><p>${esc(selfNarrative())}</p><h3>O que cada figura parece contar</h3>`;all.forEach(i=>{h+=`<div class="analysis"><strong>${esc(label(i,true))}</strong><p>${esc(figureNarrative(i))}</p><p><em>Convite:</em> o que você sente quando imagina essa figura se aproximando, se afastando, diminuindo, crescendo ou mudando o olhar?</p></div>`});h+=`<h3>Como os vínculos estão organizados</h3>`;h+=ps.length?`<p>Algumas figuras foram colocadas muito próximas: ${ps.map(p=>`<strong>${esc(label(p.a,true))}</strong> e <strong>${esc(label(p.b,true))}</strong>`).join('; ')}. Essa proximidade pode representar amor e proteção, mas também fusão, vigilância, conflito ou dificuldade de respirar separadamente. A pergunta é: essa aproximação produz segurança ou tensão?</p>`:`<p>O campo está mais espalhado. Pode existir uma necessidade importante de autonomia e proteção, mas também receio de depender, pedir, confiar ou permitir aproximação.</p>`;let edge=all.filter(i=>Math.hypot(i.x-C,i.y-C)>235);if(edge.length)h+=`<p>Na borda estão ${esc(edge.map(i=>label(i,true)).join(', '))}. Aquilo que fica na borda pode ter sido afastado para proteger você, pode ter sido pouco reconhecido ou ainda não encontrou lugar seguro na sua história.</p>`;h+=`<h3>As cores e o clima emocional</h3><p>Os significados das cores aparecem somente agora, após a revelação, para preservar a escolha intuitiva realizada às cegas.</p>`;all.forEach(i=>{let ci=colorInfo(i);h+=`<p><strong>${esc(label(i,true))} — ${ci.nome}:</strong> ${esc(ci.sentido)}. Observe se isso combina com sua percepção ou se a cor possui outro significado pessoal.</p>`});h+=`<h3>Temas emocionais presentes</h3>`;themes.forEach(t=>{let ci=colorInfo(t);h+=`<p><strong>${esc(label(t,true))}</strong> aparece no ${zone(t)}, ${gaze(t)}, em tamanho ${t.size} e na cor ${ci.nome}. Pode estar sendo vivido como ${t.size==='grande'?'muito influente e difícil de ignorar':t.size==='pequeno'?'minimizado, escondido ou mantido sob controle':'presente, mas não absoluto'}. O movimento de transformação não é lutar contra esse tema, mas compreender o que ele tenta proteger.</p>`});h+=`<h3>Leitura conectada ao objetivo</h3>`;areas.forEach(a=>h+=`<p><strong>${esc(a)}:</strong> ${areaReading(a,near,far)}</p>`);let spiritualItems=order.filter(f=>{let e=els.find(x=>x.id===f.elementId);return e&&e.type==='spiritual'});
+if(spiritualItems.length){
+  h+=`<h3>Dimensão espiritual escolhida</h3><p>${esc(clientNameValue)}, os elementos abaixo foram selecionados para observar como sua espiritualidade, suas crenças e suas percepções de proteção, influência, ancestralidade e propósito estão organizadas no campo.</p>`;
+  spiritualItems.forEach(item=>{
+    let ci=colorInfo(item);
+    h+=`<p><strong>${esc(label(item,true))}</strong> aparece no ${zone(item)}, ${gaze(item)}, em tamanho ${item.size} e na cor ${ci.nome}. Observe se este elemento é vivido por você como proteção, orientação, ameaça, responsabilidade, medo, herança, confiança ou fonte de sentido. A posição não determina uma realidade espiritual; ela orienta a sua própria investigação e experiência.</p>`;
+  });
+}
+h+=`<h3>Movimentos de transformação possíveis</h3><ul>${movements(near,far,themes).map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p>Uma mudança saudável não significa aproximar todos ou afastar tudo o que incomoda. Significa encontrar uma posição em que você reconheça cada elemento sem perder seu centro.</p><h3>Perguntas para continuar</h3><ul><li>O que neste campo parece repetir uma experiência antiga?</li><li>Qual figura ou tema ocupa uma responsabilidade que deveria ser sua?</li><li>Qual proximidade representa amor e qual representa medo de perder?</li><li>Que limite permitiria vínculo sem abandono de si?</li><li>O que você acredita que aconteceria se ocupasse plenamente seu lugar?</li></ul><h3>Nota de realidade</h3><p>Esta leitura favorece reflexão, linguagem emocional e escolhas conscientes. Não identifica fatos ocultos, não comprova campos energéticos e não substitui terapia.</p>`;diag.innerHTML=h;diag.style.display='block';goSolution.style.display='inline-block';window.diagText=diag.innerText}
+function areaReading(a,n,f){if(a.includes('Dinheiro'))return`Observe se ${label(n,true)} ocupa subjetivamente o lugar da segurança ou da prosperidade, e se ${label(f,true)} representa algo pouco acessível no movimento de crescer.`;if(a.includes('Relacionamento'))return'Analise reciprocidade de olhares, distâncias, fusão, autonomia e presença de terceiros ou temas entre o casal.';if(a.includes('Família'))return'Observe pertencimento, lugares geracionais, sobrecarga e figuras na borda.';if(a.includes('Trabalho'))return'Investigue autoridade, reconhecimento, medo de fracassar, culpa por crescer e relação com dinheiro.';if(a.includes('Autoestima'))return'Observe tamanho e posição do Eu. Um Eu pequeno ou periférico pode indicar pouca centralidade subjetiva.';if(a.includes('Luto'))return'Avalie se a distância permite reconhecer a perda sem apagar o vínculo.';if(a.includes('Maternidade'))return'Observe proteção, parceria, responsabilidade adulta e diferença entre gerações.';if(a.includes('Saúde'))return'Use apenas para explorar significados emocionais; sintomas exigem avaliação profissional.';return'Relacione posição, distância, tamanho e direção com a pergunta central.'}
+
+function refreshReorgSelect(){
+  const select=document.getElementById('removeReorgSelect');
+  if(!select)return;
+  const current=select.value;
+  select.innerHTML='<option value="">Selecione...</option>';
+  order.forEach(item=>{
+    const option=document.createElement('option');
+    option.value=item.id;
+    option.textContent=label(item,true);
+    select.appendChild(option);
+  });
+  if([...select.options].some(o=>o.value===current))select.value=current;
+}
+function addReorgFigure(){
+  const name=(document.getElementById('newReorgName').value||'').trim();
+  const type=document.getElementById('newReorgType').value;
+  if(!name)return alert('Digite o nome do novo elemento.');
+  const element={
+    id:'re'+Date.now()+Math.random(),
+    type:type,
+    role:name,
+    name:type==='person'?name:null,
+    addedInReorg:true
+  };
+  els.push(element);
+  const angle=(order.length*47)%360*Math.PI/180;
+  const item={
+    id:'rf'+Date.now()+Math.random(),
+    elementId:element.id,
+    x:C+80*Math.cos(angle),y:C+80*Math.sin(angle),
+    x2:C+80*Math.cos(angle),y2:C+80*Math.sin(angle),
+    size:'medio',color:'#27ae60',dir:270,dir2:270,
+    placed:true,revealed:true,neutral:'Novo elemento'
+  };
+  order.push(item);
+  document.getElementById('newReorgName').value='';
+  draw('solution',true,true);
+  refreshReorgSelect();
+}
+function removeReorgFigure(){
+  const select=document.getElementById('removeReorgSelect');
+  const id=select.value;
+  if(!id)return alert('Selecione o boneco que deseja excluir.');
+  const item=order.find(x=>x.id===id);
+  if(!item)return;
+  const elementId=item.elementId;
+  const itemName=label(item,true);
+  if(!confirm(`Deseja excluir “${itemName}” desta reorganização?`))return;
+  order=order.filter(x=>x.id!==id);
+  if(!order.some(x=>x.elementId===elementId))els=els.filter(e=>e.id!==elementId);
+  draw('solution',true,true);
+  refreshReorgSelect();
+}
+function openSolution(){mode='solution';[eu,...order].forEach(i=>{i.x2=i.x;i.y2=i.y;i.dir2=i.dir});show('s5');draw('solution',true,true);refreshReorgSelect();why.innerHTML='<p>O campo original foi copiado. Você pode mover tudo livremente, acrescentar novos elementos ou retirar figuras que não deseja manter na reorganização.</p>'}
+function restoreOriginal(){[eu,...order].forEach(i=>{i.x2=i.x;i.y2=i.y;i.dir2=i.dir});draw('solution',true,true);eval.innerHTML='';why.innerHTML='<p>Campo original restaurado.</p>'}
+function arc(list,r,a1,a2,dir){list.forEach((f,i)=>{let a=(list.length===1?(a1+a2)/2:a1+i*(a2-a1)/(list.length-1))*Math.PI/180;f.x2=C+r*Math.cos(a);f.y2=C+r*Math.sin(a);f.dir2=dir})}
+function circle(list,r){list.forEach((f,i)=>{let a=(i*360/Math.max(1,list.length)-90)*Math.PI/180;f.x2=C+r*Math.cos(a);f.y2=C+r*Math.sin(a);f.dir2=(Math.atan2(C-f.y2,C-f.x2)*180/Math.PI+360)%360})}
+function suggestSolution(){eu.x2=C;eu.y2=C;eu.dir2=270;let parents=order.filter(f=>{let e=els.find(x=>x.id===f.elementId);return e.type==='person'&&/pai|mãe|mae/i.test(e.role)}),partners=order.filter(f=>{let e=els.find(x=>x.id===f.elementId);return e.type==='person'&&/marido|esposa|namorad|parceir|cônjuge|conjuge/i.test(e.role)}),children=order.filter(f=>{let e=els.find(x=>x.id===f.elementId);return e.type==='person'&&/filho|filha/i.test(e.role)}),themes=order.filter(f=>els.find(x=>x.id===f.elementId).type==='theme'),others=order.filter(f=>!parents.includes(f)&&!partners.includes(f)&&!children.includes(f)&&!themes.includes(f));arc(parents,220,230,310,90);arc(partners,105,0,180,180);arc(children,135,60,120,270);circle(others,205);circle(themes,255);draw('solution',true,true);why.innerHTML='<h3>Por que esta sugestão?</h3><ul><li>O Eu foi centralizado como referência da própria vida.</li><li>Pais foram colocados atrás para simbolizar origem e diferença geracional.</li><li>Parceiros ficaram lateralmente, em maior horizontalidade.</li><li>Filhos ficaram à frente, preservando responsabilidade adulta.</li><li>Temas abstratos foram para a faixa externa, reconhecidos sem dominar a identidade.</li></ul><p>É uma proposta comparativa, não uma ordem universal.</p>'}
+function evaluateSolution(){let all=[eu,...order],near=[],far=[],turned=[],moved=[];all.forEach(i=>{let d0=Math.hypot(i.x-eu.x,i.y-eu.y),d1=Math.hypot(i.x2-eu.x2,i.y2-eu.y2),mv=Math.hypot(i.x2-i.x,i.y2-i.y);if(mv>22)moved.push(label(i,true));if(i.id!=='eu'&&d1<d0-25)near.push(label(i,true));if(i.id!=='eu'&&d1>d0+25)far.push(label(i,true));if(diff(i.dir2,i.dir)>35)turned.push(label(i,true))});let centralThemes=order.filter(f=>els.find(e=>e.id===f.elementId).type==='theme'&&Math.hypot(f.x2-C,f.y2-C)<130),euCenter=Math.hypot(eu.x2-C,eu.y2-C);let h=`<h3>Resultado da reorganização</h3><p>${moved.length} de ${all.length} figuras foram modificadas.</p>`;if(near.length)h+=`<p><strong>Aproximadas do Eu:</strong> ${esc(near.join(', '))}. Pode indicar vínculo, prioridade, reconhecimento ou aumento de pressão.</p>`;if(far.length)h+=`<p><strong>Afastadas:</strong> ${esc(far.join(', '))}. Pode indicar limite, diferenciação, proteção ou evitação.</p>`;if(turned.length)h+=`<p><strong>Mudaram o olhar:</strong> ${esc(turned.join(', '))}. Isso pode indicar reconhecimento, interrupção de fixação ou abertura para outra direção.</p>`;h+=`<h3>Orientação</h3><ul>${euCenter<80?'<li>O Eu está mais central, favorecendo referência em si.</li>':'<li>O Eu permanece periférico; teste uma posição mais central e observe o corpo.</li>'}${centralThemes.length?`<li>Os temas ${esc(centralThemes.map(x=>label(x,true)).join(', '))} continuam muito centrais. Experimente afastá-los gradualmente.</li>`:''}<li>Uma reorganização tende a ser mais funcional quando aumenta clareza de lugares, reduz sobreposição e permite pertencimento sem fusão.</li></ul>`;eval.innerHTML=h;window.evalText=eval.innerText}
+function activities(){let a=[],themesBig=order.filter(f=>els.find(e=>e.id===f.elementId).type==='theme'&&f.size==='grande'),backs=order.filter(f=>gaze(f).includes('costas')),near=order.slice().sort((x,y)=>dist(x,eu)-dist(y,eu))[0];if(eu.size==='pequeno'||Math.hypot(eu.x-C,eu.y-C)>190)a.push('Exercício de centralidade: desenhe três posições possíveis para o Eu e observe em qual há mais respiração, força e responsabilidade.');if(themesBig.length)a.push(`Diferenciação: para ${themesBig.map(x=>label(x,true)).join(', ')}, escreva “Eu reconheço que isso existe, mas isso não define toda a minha identidade”.`);if(backs.length)a.push(`Exercício do olhar: escolha ${label(backs[0],true)} e escreva o que pode estar sendo olhado fora do campo, separando fato, medo, fantasia e necessidade.`);a.push(`Diário de proximidade: por sete dias, observe quando ${label(near,true)} fica emocionalmente perto demais e registre situação, emoção, impulso e limite necessário.`);a.push('Reorganização corporal: monte o campo com objetos, fotografe antes e depois e descreva onde sente mais tensão ou alívio.');return a}
+async function svgFieldToPng(svgId){
+  const source=document.getElementById(svgId);
+  if(!source)return null;
+
+  const clone=source.cloneNode(true);
+  clone.setAttribute('xmlns','http://www.w3.org/2000/svg');
+  clone.setAttribute('width','1200');
+  clone.setAttribute('height','1200');
+  clone.setAttribute('viewBox','0 0 600 600');
+
+  // Fundo do campo para que a imagem não fique transparente no PDF.
+  const background=document.createElementNS('http://www.w3.org/2000/svg','rect');
+  background.setAttribute('x','0');
+  background.setAttribute('y','0');
+  background.setAttribute('width','600');
+  background.setAttribute('height','600');
+  background.setAttribute('fill','#1b0d2b');
+  clone.insertBefore(background,clone.firstChild);
+
+  // Garante que textos e linhas mantenham boa leitura na imagem exportada.
+  clone.querySelectorAll('text').forEach(text=>{
+    if(!text.getAttribute('font-family'))text.setAttribute('font-family','Georgia, Times New Roman, serif');
+  });
+
+  const serialized=new XMLSerializer().serializeToString(clone);
+  const blob=new Blob([serialized],{type:'image/svg+xml;charset=utf-8'});
+  const url=URL.createObjectURL(blob);
+
+  try{
+    const image=await new Promise((resolve,reject)=>{
+      const img=new Image();
+      img.onload=()=>resolve(img);
+      img.onerror=()=>reject(new Error('Não foi possível converter o campo em imagem.'));
+      img.src=url;
+    });
+
+    const canvas=document.createElement('canvas');
+    canvas.width=1200;
+    canvas.height=1200;
+    const ctx=canvas.getContext('2d');
+    ctx.fillStyle='#1b0d2b';
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.drawImage(image,0,0,canvas.width,canvas.height);
+    return canvas.toDataURL('image/png',1);
+  } finally {
+    URL.revokeObjectURL(url);
+  }
+}
+
+function addPdfHeader(doc,subtitle){
+  doc.setFillColor(43,23,67);
+  doc.rect(0,0,595,90,'F');
+  doc.setTextColor(212,175,55);
+  doc.setFont('times','bold');
+  doc.setFontSize(21);
+  doc.text('Constelação Familiar Sistêmica',40,47);
+  doc.setFontSize(11);
+  doc.setTextColor(235,225,242);
+  doc.text(subtitle,40,69);
+}
+
+function addFieldImagePage(doc,title,imageData){
+  if(!imageData)return;
+  doc.addPage();
+  addPdfHeader(doc,`${clientNameValue} — ${formatDateBR(sessionDateValue)}`);
+  doc.setTextColor(45,25,60);
+  doc.setFont('times','bold');
+  doc.setFontSize(16);
+  doc.text(title,40,122);
+
+  // Moldura e imagem quadrada, preservando toda a geometria do campo.
+  doc.setDrawColor(141,91,181);
+  doc.setLineWidth(1);
+  doc.roundedRect(40,142,515,515,10,10,'S');
+  doc.addImage(imageData,'PNG',47,149,501,501);
+
+  doc.setFont('times','normal');
+  doc.setFontSize(9);
+  doc.setTextColor(95,75,110);
+  doc.text('Registro visual da disposição, das distâncias, dos tamanhos, das cores e das direções do olhar.',40,680);
+}
+
+async function makePDF(event){
+  if(!window.jspdf)return alert('Biblioteca de PDF não carregada.');
+
+  const pdfButton=event?.currentTarget;
+  const originalButtonText=pdfButton?.textContent;
+  if(pdfButton){
+    pdfButton.disabled=true;
+    pdfButton.textContent='Preparando imagens e relatório...';
+  }
+
+  try{
+    if(!window.evalText)evaluateSolution();
+
+    // Captura o campo revelado e a reorganização exatamente como aparecem no aplicativo.
+    const originalFieldImage=await svgFieldToPng('revealed');
+    const reorganizedFieldImage=await svgFieldToPng('solution');
+
+    let{jsPDF}=window.jspdf;
+    const doc=new jsPDF({unit:'pt',format:'a4'});
+    let y=112;
+
+    addPdfHeader(doc,`Relatório de ${clientNameValue} — ${formatDateBR(sessionDateValue)}`);
+
+    let text=`NOME DA PESSOA
+${clientNameValue}
+
+DATA DA SESSÃO
+${formatDateBR(sessionDateValue)}
+
+ÁREAS TRABALHADAS
+${areas.join(', ')}
+
+OBJETIVO DA AUTO CONSULTA
+${objetivo.value}
+
+LEITURA TERAPÊUTICA DO CAMPO
+${window.diagText||''}
+
+RESULTADO DA REORGANIZAÇÃO
+${window.evalText||''}
+
+ATIVIDADES SISTÊMICAS PERSONALIZADAS
+${deepActivities().map((x,i)=>(i+1)+'. '+x).join('\n\n')}
+
+CARTAS TERAPÊUTICAS
+${letters().join('\n\n----------------------------------------\n\n')}
+
+COMPROMISSO DE INTEGRAÇÃO
+Escolha apenas um movimento possível para os próximos sete dias. Transformação não exige pressa; exige presença, repetição e responsabilidade.
+
+NOTA ÉTICA
+Este relatório usa linguagem simbólica e exercícios de imaginação, escrita e percepção corporal. Não substitui psicoterapia, diagnóstico médico, avaliação psicológica ou atendimento emergencial.`;
+
+    doc.setTextColor(45,25,60);
+    doc.setFont('times','normal');
+    doc.setFontSize(11);
+
+    doc.splitTextToSize(text,500).forEach(line=>{
+      if(y>770){
+        doc.addPage();
+        y=50;
+      }
+      doc.text(line,40,y);
+      y+=15;
+    });
+
+    // As imagens são incluídas como páginas próprias para não ficarem pequenas ou cortadas.
+    addFieldImagePage(doc,'Campo original revelado',originalFieldImage);
+    addFieldImagePage(doc,'Campo após a reorganização',reorganizedFieldImage);
+
+    doc.save(`relatorio-constelacao-${clientNameValue||'sistemica'}.pdf`);
+  }catch(error){
+    console.error(error);
+    alert('Não foi possível inserir a imagem do campo no PDF. Tente novamente após concluir a revelação e a reorganização.');
+  }finally{
+    if(pdfButton){
+      pdfButton.disabled=false;
+      pdfButton.textContent=originalButtonText;
+    }
+  }
+}
+function resetAll(){clientNameValue='';sessionDateValue='';areas=[];els=[];figs=[];order=[];mode='blind';eu={id:'eu',x:null,y:null,x2:null,y2:null,size:'medio',color:'#d4af37',dir:270,dir2:270,placed:false};document.querySelectorAll('#areas input').forEach(x=>x.checked=false);document.querySelectorAll('#temas input').forEach(x=>x.checked=['Culpa','Raiva','Rejeição','Não merecimento','Medo'].includes(x.value));objetivo.value='';pre.value='';document.getElementById('clientName').value='';document.getElementById('sessionDate').value=new Date().toISOString().slice(0,10);document.querySelectorAll('#spiritualThemes input').forEach(x=>x.checked=false);renderList();show('inicio')}
+</script>
+</body></html>
